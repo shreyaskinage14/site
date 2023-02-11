@@ -24,6 +24,8 @@ html {
 
 body {
   margin: 0;
+  background-color: #232428 !important;
+
 }
 
 /**
@@ -378,21 +380,60 @@ template {
   display: none;
 }
 
+.navbar {
+  backdrop-filter: blur(8px) saturate(123%);
+  -webkit-backdrop-filter: blur(8px) saturate(123%);
+  /* border-radius: 12px; */
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #efe2ba !important;
+}
+
+.header-bg {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.1),
+      transparent);
+  ;
+  color: #fff !important;
+}
+
+.footer {
+  background-color: #4056a1;
+}
+
 .main {
   padding-top: 11rem;
-  width: 350px;
+  height: 100vh;
+  background-image: url("/images/bgpersonal.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 800px; */
   overflow: hidden;
   margin: auto;
 }
 
 .homeimg {
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
   overflow: hidden;
 }
 
 .footer {
-  margin-top: 4rem;
+  background-color: #f2c088;
+  /* color: #fff; */
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -401,4 +442,26 @@ template {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.wi-50 {
+  width: 50%;
+}
+
+.about-card {
+  margin-left: 3rem;
+  backdrop-filter: blur(10px) saturate(250%);
+  -webkit-backdrop-filter: blur(10px) saturate(200%);
+  background-color: rgba(0, 0, 0, 0.43);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+@media screen and (max-width:991px) {
+  .w-sm-100 {
+    width: 100%;
+  }
+
+  .main {
+    background-position: right;
+  }
 }
