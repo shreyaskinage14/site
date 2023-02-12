@@ -21,9 +21,26 @@
     <title>Lazz</title>
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-sm header-bg p-4">
-      <div class="container-fluid d-flex flex-lg-row flex-sm-column">
-        <div class="row wi-50 w-sm-100">
+    <nav
+      class="navbar fixed-top navbar-expand-sm header-bg px-4 py-3 d-flex justify-content-between"
+    >
+      <a title="Home" href="index.html">
+        <img
+          alt="logo"
+          src="/images/A.png"
+          class="rounded-4"
+          height="70px"
+          width="70px"
+        />
+      </a>
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <a
+          href="index.html"
+          class="text-decoration-none text-white d-flex align-items-center gap-3"
+        >
+          <p class="m-0 title">LAZARUS ARBOLE</p>
+        </a>
+        <div class="container-fluid d-flex flex-lg-row flex-sm-column">
           <div class="d-flex justify-content-between toggle">
             <button
               class="navbar-toggler d-lg-hidden"
@@ -37,51 +54,61 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-          <!-- <p class="navbar-brand fs-6 m-0 fw-bold text-uppercase">Artist</p> -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto gap-2 align-items-center">
+              <li class="nav-item">
+                <a class="nav-link navtitle" href="actor.html">Actor</a>
+              </li>
+              <span class="d-sm-none d-none d-lg-block">|</span>
+              <li class="nav-item">
+                <a class="nav-link navtitle" href="#">Choreographer</a>
+              </li>
+              <span class="d-sm-none d-none d-lg-block">|</span>
+              <li class="nav-item">
+                <a class="nav-link navtitle" href="#">Artistic Director</a>
+              </li>
+              <span class="d-sm-none d-none d-lg-block">|</span>
+              <li class="nav-item">
+                <a class="nav-link navtitle" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto gap-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Actor</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Choreography</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Creative Director</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Writer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div class="d-flex flex-row gap-2 text-start">
+        <a
+          target="_blank"
+          href="https://www.instagram.com/lazzarbole"
+          class="text-decoration-none text-white cursor-pointer"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/lazarbole"
+          class="text-decoration-none text-white cursor-pointer"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
       </div>
     </nav>
     <div class="row flex-column m-auto main">
       <div
         class="col-6 d-flex flex-column justify-content-start rounded-4 p-5 shadow about-card"
       >
-        <!-- <img class="rounded-2 ms-5 homeimg" src="images/A.png" alt="" /> -->
-        <p class="navbar-brand text-white fs-1 m-0 fw-light">Lazarus Arbole</p>
-        <p class="lead fst-italic text-white">Artist</p>
-        <div class="text-white mb-4" style="text-align: justify">
-          He is a filmaker based in Mumbai. His workstyle attempt to push
+        <p class="lead fst-italic fs-3 text-white">Artist</p>
+        <div class="text-white mb-4 fs-5" style="text-align: justify">
+          He is a filmmaker based in Mumbai. His workstyle attempt to push
           conventional boundaries with quirk to create something unique.
           <div class="my-2"></div>
-          Over the years, he has worked with many channels, brands and bollywood
-          celebrities. He is highly collaborative and directs his crew and
-          artist with ease. He works as an Artist, Creative Director, Associate
-          Director, Choreographer and Writer which includes Digital Ads., TV
-          Commercials, Films, Music Video and Wedding Shoots
+          Over the years, he has worked with many Channels, Brands and Indian
+          Cinema Celebrities. He is highly collaborative and directs his crew
+          and artist's with ease. He works as an Actor, Choreographer, Artistic
+          Director and Writer which includes Films, Music Video, Web Series,
+          Digital Ads., and TV Commercials.
         </div>
       </div>
     </div>
 
-    <footer class="footer px-2 py-1">
+    <!-- <footer class="footer px-2 py-1">
       <div class="container">
         <div class="d-flex flex-row justify-content-between align-items-center">
           <div
@@ -107,7 +134,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
